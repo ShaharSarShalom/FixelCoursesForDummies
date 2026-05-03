@@ -7,6 +7,8 @@
 
 A repository dedicated to [Fixel Courses](https://fixelalgorithms.gitlab.io/courses) (Education).
 
+SSS: At this point I work only on the optimization course 
+
 ## Table of Courses
 
  - [Image Processing Methods](https://fixelalgorithms.gitlab.io/courses/imgprocmethods).
@@ -18,7 +20,7 @@ A repository dedicated to [Fixel Courses](https://fixelalgorithms.gitlab.io/cour
 
 
 ## Resources
-
+ - [Use docker compose file to build a python env for this project, works great for the optimization course. simply docker compose up. chang the volume mapping accordingly](./docker-compose.yml).
  - [Install Conda Environment](./InstallCondaEnv.md).
  - [Install Conda Environment with MicroMamba Package Manager (Advanced)](./InstallMicroMamba.md).
 

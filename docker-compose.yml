@@ -1,0 +1,22 @@
+
+# version: "3.9"
+
+services:
+  python-env:
+    build: .
+    container_name: optimization_env_for_dummies
+    privileged: true
+    network_mode: host
+    ports:
+      - "8000-8100:8000-8100"
+      - "8888:8888"
+      - "5678:5678"
+    volumes:
+      - ./:/app
+      # - Z:\FixelAlgorithms\OptimizationMethods_2026_02\SSS\:/app_blat
+      # - \\MMNXMHTZARIM\FixelAlgorithms\OptimizationMethods_2026_02\SSS\:/app_blat
+      # - "//MMNXMHTZARIM/FixelAlgorithms/OptimizationMethods_2026_02/SSS:/app_blat"
+    working_dir: /app
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
